@@ -28,7 +28,7 @@ body{
     height: 12px;
 }
 #stakeholder input[type="text"] {
-    width: 900px;
+    width: 600px;
     background-color: rgb(75, 75, 75);
     padding: 5px;
     margin-left: 150px;
@@ -67,9 +67,11 @@ body{
 }
 .subtitulo {
     background-color: #030303;
-    height: 2350px;
+    height: 1850px;
     
 }
+
+
 .subtitulo h4{
     color: #c9c917;
     text-shadow: red 2px 2px 2px;
