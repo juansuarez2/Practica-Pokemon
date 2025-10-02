@@ -1,0 +1,352 @@
+body{
+    margin: 0px;
+    
+}
+
+#encabezado h1 {
+    background-color: #030303;
+    color: #c9c917;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    border-bottom: 5px solid #080808;
+    text-shadow: red 2px 2px 2px;
+    margin: 0;
+    font-size: 50;
+}
+
+.contendor {
+    display: inline-block;
+}
+
+#stakeholder {
+    margin: 0px;
+    padding: 30px;
+    border: 1px solid rgb(15, 15, 15);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    background-color: rgb(0, 0, 0);
+    height: 12px;
+}
+#stakeholder input[type="text"] {
+    width: 900px;
+    background-color: rgb(75, 75, 75);
+    padding: 5px;
+    margin-left: 150px;
+
+}
+
+#stakeholder button.buscar {
+    background-color: rgb(9, 9, 9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-left: 50px;
+}   
+#stakeholder button.favoritos {
+    background-color: rgb(9, 9, 9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+#stakeholder button.ultimo {
+    background-color: rgb(9, 9, 9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.subtitulo {
+    background-color: #030303;
+    height: 1550px;
+    
+}
+.subtitulo h4{
+    color: #c9c917;
+    text-shadow: red 2px 2px 2px;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-size: 30px;
+    margin: 0px;
+    margin-left: 20px;
+    padding-left: 200px;
+    padding-top: 40px;
+}
+
+#pokemones {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 40px; 
+    background-color: #030303;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 100px;
+    
+    
+}
+
+
+.pokemonNombre{
+  color: #910909;
+  font-family: 'Press Start 2P', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px;
+  padding-top: 13px;
+}
+
+.botonFavoritos {
+
+    background: rgba(141, 141, 141, 0.947);
+    border: none;
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    
+}
+
+#favoritosContainer {
+    display: none;
+    
+}
+#favoritosContainer h4{
+    color: #c9c917;
+    text-shadow: red 2px 2px 2px;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 20px;
+    padding-left: 200px;
+    padding-top: 40px;
+}
+
+#favoritos {
+    color: #dabebe;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-size: 18px;
+    min-width: 400px; 
+    margin: 0;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    gap: 4px 4px;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.favoritoCard {
+  width: 300px;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px 4px;
+  background: #121010;
+  border: 2px solid #726a40;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 2px 2px 10px #e0e0e0;
+  display: flex;
+  justify-content:space-between ;
+  
+  
+}
+
+.favoritoNombre {
+  color: #910909;
+  font-family: 'Press Start 2P', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding-top: 13px;
+  flex: 1;
+}
+
+.eliminarFavorito {
+    background: #910909;
+    color: #fff;
+    border: none;
+    border-radius: 40%;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+    
+    
+}
+
+
+.pokemonCard{
+  width: 190px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: #060606;
+  border: 2px solid #f7d51d;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 2px 2px 10px #e0e0e0;
+
+}
+
+.pokemonImg{
+  width: 185px;
+  height: 140px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  background: #171414;
+  border-radius: 8px;
+  margin: 0;
+  display: block;
+
+
+}
+.favoritoImg{
+  width: 60px;
+  height: 50px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  background: #ffffff;
+  border-radius: 8px;
+  margin: 0;
+  display: block;
+
+
+}
+
+.botonFavoritos{
+  margin-top: 13px;
+}
+
+#detallePokemon {
+  display: none;
+  background: #0b0b0b;
+  color: #eaeaea;
+  border: 2px solid #f7d51d;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 30px 100px;
+  box-shadow: 2px 2px 10px #000;
+  font-family: 'Press Start 2P', Arial, sans-serif;
+  line-height: 1.6;
+  position: relative;
+}
+#detallePokemon.mostrar { display: block; }
+
+.detalleHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.detalleHeader img {
+  width: 120px; height: 120px;
+  object-fit: contain;
+  background:#171414; border-radius:8px;
+}
+.detalleRow { margin: 6px 0; }
+
+#cerrarDetalle {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #910909;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.volverLista {
+    position: absolute;
+  top: 300px;
+  right: 200px;
+  background: #910909;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 12px;
+    
+}
+
+#paginacion {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #030303;
+}
+#btnAnterior, #btnSiguiente {
+    gap: 8px;
+    background: #910909;
+    border-radius: 6px;
+    color: #fff;
+     border: none;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+
+    
+}
+
+#ultimos { 
+  color: #dabebe;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-size: 18px;
+    min-width: 400px; 
+    margin: 0;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    gap: 4px 4px;
+    flex-wrap: wrap;
+}
+
+#ultimosContainer h4{
+    color: #c9c917;
+    text-shadow: red 2px 2px 2px;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 20px;
+    padding-left: 200px;
+    padding-top: 40px;
+}
+
+#btnAgregarFavorito {
+    background: #910909;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 5px;
+}

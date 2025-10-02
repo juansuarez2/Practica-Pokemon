@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="encabezado">
+    <h1>Pokemon</h1>
+</div>
+<div class="contenedor">
+<form id="stakeholder">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <button type="submit" class="buscar" >Buscar</button> 
+    <button type="button" class ="favoritos" id="botonFavoritos">Favoritos</button>
+    <button type="button" class ="ultimo" id="botonUltimos">Ultimos</button>
+</form>
+</div>
+
+<div id="Lista de Pokemones">
+    <div class="subtitulo">
+    <h4>Lista de Pokemones</h4>
+<div id="pokemones"></div>
+<div id="paginacion">
+  <button id="btnAnterior"></button>
+  <span id="infoPagina"></span>
+  <button id="btnSiguiente"></button>
+</div>
+<div id="favoritosContainer">
+    <h4>Favoritos</h4>
+    <ul id="favoritos"></ul>
+</div>
+<div id="ultimosContainer" style="display:none">
+    <h4>Ultimos Buscados</h4>
+  <div id="ultimos"></div>
+</div>
+
+<div id="detallePokemon"></div>
+
+    </div>
+     
+
+<script src="index.js"></script>
+    
+</body>
+</html>
